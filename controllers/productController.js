@@ -47,8 +47,7 @@ export const getAllProducts = asyncHandler(async (req, res) => {
     // Get all products with category filtering and populated fields
     const productList = await Product.find(filter)
       .populate("category")
-      .populate("subCat")
-      .limit(15);
+      .populate("subCat");
 
     // Check if products were found
     if (!productList || productList.length === 0) {
@@ -88,8 +87,7 @@ export const getRelatedProducts = asyncHandler(async (req, res) => {
   try {
     const relatedProducts = await Product.find(filter)
       .populate("category")
-      .populate("subCat")
-      .limit(15);
+      .populate("subCat");
 
     // Check if products were found
     if (!relatedProducts || relatedProducts.length === 0) {
@@ -321,6 +319,7 @@ export const updateProduct = asyncHandler(async (req, res) => {
     return res.status(500).json({ message: "Internal Server Error", error: error.message });
   }
 });
+
 
 
 
