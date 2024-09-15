@@ -1,5 +1,4 @@
 
-
 /**
  * 
  * @param {*} error 
@@ -15,8 +14,6 @@ export const errorHandler = (error, req, res, next) => {
   // send error message 
   return res.status(status).json({ message : error.message});
 }; 
-
-
 
 
 

@@ -21,12 +21,3 @@ const brandSchema = mongoose.Schema({
 export default mongoose.model("Brand", brandSchema);
 
 
-
-
-
-
-
-
-
-
-

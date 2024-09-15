@@ -13,6 +13,7 @@ import productRouter from "./routes/product.js";
 import productRamRouter from "./routes/productRam.js";
 import productSizeRouter from "./routes/productSize.js";
 import productWeightRouter from "./routes/productWeight.js";
+
 import userRouter from "./routes/user.js";
 import cartRouter from "./routes/cart.js";
 import reviewRouter from "./routes/review.js";
@@ -20,6 +21,7 @@ import wishlistRouter from "./routes/wishList.js";
 import orderRouter from "./routes/order.js";
 import sliderRouter from "./routes/slider.js";
 import searchRouter from "./routes/search.js";
+import messageRouter from "./routes/message.js";
 
 import cors from "cors";
  import bodyParser from "body-parser";
@@ -66,6 +68,7 @@ app.use("/api/v1/wishlist", wishlistRouter);
 app.use("/api/v1/order", orderRouter); 
 app.use("/api/v1/slider", sliderRouter); 
 app.use("/api/v1/search", searchRouter); 
+app.use("/api/v1/message", messageRouter); 
 
 // error handler 
 app.use(errorHandler); 

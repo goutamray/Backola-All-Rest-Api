@@ -8,13 +8,11 @@ cloudinary.v2.config({
   api_secret: 'u1t_8EY8zJdEUxmNsC4G0QiYnaI' 
 }); 
 
-
 // file upload to cloud
 export const fileUploadToCloud = async(path) => {
   const data = await cloudinary.v2.uploader.upload(path);
   return data;
 }; 
-
 
 // file upload to cloud
 export const fileDeleteFromCloud = async(publicId) => {

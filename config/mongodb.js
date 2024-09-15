@@ -1,7 +1,6 @@
 
 import mongoose from "mongoose";
 
-
 // create mongodb connection 
 export const mongoDbConnection = async(req, res) => {
   try {
@@ -11,6 +10,7 @@ export const mongoDbConnection = async(req, res) => {
     console.log(` MongoDb connection Failed `.bgRed.black);
   }
 }
+
 
 
 

@@ -6,6 +6,7 @@ import jwt from "jsonwebtoken";
 import { fileDeleteFromCloud, fileUploadToCloud } from "../utilis/cloudinary.js";
 import { findPublicId } from "../helpers/helpers.js";
 
+
 /**
  * @DESC  GET ALL USERS
  * @METHOD GET
@@ -24,7 +25,6 @@ export const getAllUsers= asyncHandler(async(req, res) => {
 
 return res.status(200).json({ userList, message : "Get All Users"});
 });
-
 
 
 /**

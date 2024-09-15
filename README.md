@@ -30,7 +30,6 @@ git clone https://github.com/goutamray/Ecommerce_product_and_category_api.git
 PORT
 MONGO_URL 
 
-
 npm install
 npm run dev
 ```
