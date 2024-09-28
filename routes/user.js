@@ -9,6 +9,7 @@ import {
   loginUser,
   countUser,
   changePassword,
+  loginWithGoogle
 } from "../controllers/userController.js";
  //import verifyAccessToken from "../middlewares/verifyToken.js";
 import { userPhotoMulter } from "../utilis/multer.js";
@@ -19,6 +20,7 @@ const router = express.Router();
 // routes 
 router.post("/signup", userPhotoMulter,  createUser); 
 router.post("/login", loginUser); 
+router.post("/authwithgoogle", loginWithGoogle); 
 router.get("/get/count", countUser); 
 
 router.get("/", getAllUsers);      
