@@ -16,19 +16,3 @@ router.get("/", getAllSearchProduct);
 // export default router 
 export default router;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
